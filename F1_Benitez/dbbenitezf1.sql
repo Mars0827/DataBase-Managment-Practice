@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 14, 2024 at 01:51 PM
+-- Generation Time: Apr 04, 2024 at 01:27 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `dbcabilif1`
+-- Database: `dbbenitezf1`
 --
 
 -- --------------------------------------------------------
@@ -40,8 +40,7 @@ CREATE TABLE `tbluseraccount` (
 --
 
 INSERT INTO `tbluseraccount` (`acctid`, `emailadd`, `username`, `password`, `usertype`) VALUES
-(13, 'keiruvent.cabili@cit.edu', 'keiru277', '01230321', 'student'),
-(14, 'kurtcabili@gmail.com', 'kurt277', '01230321', 'student');
+(7, 'marsbenitez08272@gmail.com', 'mars0827', '123456', 'student');
 
 -- --------------------------------------------------------
 
@@ -62,8 +61,7 @@ CREATE TABLE `tbluserprofile` (
 --
 
 INSERT INTO `tbluserprofile` (`userid`, `firstname`, `lastname`, `gender`, `birthdate`) VALUES
-(15, 'Keiru', 'Cabili', 'male', '2004-06-03'),
-(16, 'Kurt', 'Cabili', 'male', '2006-01-12');
+(8, 'Mars', 'Benitez', 'male', '2024-03-17');
 
 --
 -- Indexes for dumped tables
@@ -91,13 +89,13 @@ ALTER TABLE `tbluserprofile`
 -- AUTO_INCREMENT for table `tbluseraccount`
 --
 ALTER TABLE `tbluseraccount`
-  MODIFY `acctid` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'Account Id of the user', AUTO_INCREMENT=15;
+  MODIFY `acctid` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'Account Id of the user', AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `tbluserprofile`
 --
 ALTER TABLE `tbluserprofile`
-  MODIFY `userid` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'UserID of the User', AUTO_INCREMENT=17;
+  MODIFY `userid` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'UserID of the User', AUTO_INCREMENT=9;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
