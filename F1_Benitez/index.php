@@ -1,45 +1,147 @@
-<html>
-<head>
-    <title>ChumCode</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="BusinessWebsiteScript.js" defer></script>
-</head>
-<body>
-    <section class="vh-100" style="background-color: #272744;">
-        <header>
-            <a href="#"><img src="logo.png" alt="Logo" class="logo"></a>
-            <ul>`
-            <li><a href="index.php">Home</a></li>
-                <li><a href="AboutUs.php">About Us</a></li>
-                <li><a href="Contact.php">Contact Us</a></li>
-                <li><a href="Register.php">Register</a></li>
-                <li><a href="RegisterLog-In.php">Log In</a></li>
-            </ul>
-        </header>
-        <div class="content">
-            <div class="textbox1">
-                <p>At ChumCode, we're not just another code compiler website; we're your virtual school for mastering the art of programming. Whether you're a beginner eager to take your first steps into the world of coding or an experienced developer looking to sharpen your skills, ChumCode is here to guide you every step of the way.
+<?php    
+    include 'connect.php';
+    //include 'readrecords.php';   
+    require_once 'includes/header.php'; 
+?>
 
-                    Our platform offers a comprehensive range of programming lessons designed to cater to learners of all levels. From the fundamental concepts of programming languages like Python, Java, and C++, to advanced topics such as data structures, algorithms, and web development, we cover it all.
-                    
-                    What sets ChumCode apart is our commitment to providing an interactive and engaging learning experience. Our lessons are crafted by experienced educators and industry professionals who understand the intricacies of programming and know how to make learning fun and rewarding.
-                    
-                    Whether you prefer to learn through hands-on coding exercises, interactive tutorials, or live coding sessions with expert instructors, ChumCode has something for everyone. Our intuitive code editor allows you to write, compile, and run code directly within your browser, making learning convenient and hassle-free.
-                    
-                    Join the ChumCode community today and embark on a journey of discovery and mastery. Let's unlock the boundless potential of programming together!</p>
-                <a href="#">View All Lessons</a>
+  <body>
+    
+    <div class="first-page-main-page">
+  
+    <div class="mainpage-carousel">
+    <img class="screentone" src="images/screentones.png" alt="screentones">
+      <div class="carousel-box">
+        <div id="carouselExampleIndicators" class="carousel slide six-hundo" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active-black"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1">oten</li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <h1 class="space-mono-bold">LEARN TO CODE WITH PRECISION AND ACCURACY</h1>
+              <img class="d-block w-100" src="images/slide1.png" alt="First slide">
             </div>
-            <div class="imgBox">
-                <img src="logo.png" class="whey">
+            <div class="carousel-item">
+              <h1 class="space-mono-bold">ENDLESS PRACTICE PROBLEMS WITH INTERACTIVE COURSES</h1>
+              <img class="d-block w-100" src="images/slide2.png" alt="Second slide">
             </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="images/slide1.png" alt="Third slide">
+              <h1 class="space-mono-bold">LEARN TO CODE WITH PRECISION AND ACCURACY</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="right-box">
+      <div class="large-box">
+        <div class="badge-box space-mono-thin">New Course</div>
+        <h2>Explore new C++ courses</h2>
+
+        <ul class="list-number">
+          <li class="space-mono-thin"><span class="space-mono-regular"> 37</span> Courses</li>
+          <li class="space-mono-thin"><span class="space-mono-regular"> 4</span> Skill Paths</li>
+          <li class="space-mono-thin"><span class="space-mono-regular"> 2</span> Career Paths</li>
+        </ul>
+
+        <span class="zero-margin ">Learn skills that will unlock your C++ potential to succeed on your programming journey with courses on data structures and algorithms.</span>
+        <br>
+        <br>
+        <a href="." class="open-sans-bold">View C++ Catalog</a>
+      </div>
+
+      <div class="large-box">
+        <div class="badge-box space-mono-thin">Recently Added</div>
+        <h2>Explore new AI courses</h2>
+
+        <ul class="list-number">
+          <li class="space-mono-thin"><span class="space-mono-regular"> 42</span> Courses</li>
+          <li class="space-mono-thin"><span class="space-mono-regular"> 3</span> Skill Paths</li>
+          <li class="space-mono-thin"><span class="space-mono-regular"> 2</span> Career Paths</li>
+        </ul>
+
+        <span class="zero-margin ">LUnlock skills that will help you succeed in our rapidly changing world with courses on machine learning, ChatGPT, and more.</span>
+        <br>
+        <br>
+        <a href="." class="open-sans-bold">View AI Catalog</a>
+      </div>
+  </div>
+    
+    </div>
+
+    <div class="blue-bg">
+      <div class="second-page-main-page blue-bg">
+      
+        <p class="space-mono-thin">Start Learning</p>
+        <h2 class="open-sans-bold">Popular Courses</h2>
+
+        <div class="course-container-main-box">
+
+          <div class="course-container">
+            <div class="course-box"><div class="course-box-top-box space-mono-thin">Free Course</div>
+            <h5 class="open-sans-regular">Intro to HTML</h3>
+              <span class="open-sans-regular">Start at the beginning by learning HTML
+                basics — an important foundation for
+                building and editing web pages.</span>
+                <div class="course-container-footer open-sans-bold">Beginner Friendly</div>
+            </div>
+          </div>
+
+          <div class="course-container">
+            <div class="course-box"><div class="course-box-top-box space-mono-thin">Course</div>
+            <h5 class="open-sans-regular">Learn Python 3</h3>
+              <span class="open-sans-regular">Learn the basics of Python 3, one of the most powerful, versatile, and in-demand programming languages today.</span>
+                <div class="course-container-footer open-sans-bold">Beginner Friendly</div>
+            </div>
+          </div>
+
+          <div class="course-container">
+            <div class="course-box"><div class="course-box-top-box space-mono-thin">Free Course</div>
+            <h5 class="open-sans-regular">Learn JavaScript</h3>
+              <span class="open-sans-regular">Learn how to use JavaScript - a powerful and flexible programming language for adding website interactivity.</span>
+                <div class="course-container-footer open-sans-bold">Beginner Friendly</div>
+            </div>
+          </div>
+
         </div>
         
-    </section>
+        <div class="course-container-main-box">
+
+          <div class="course-container">
+            <div class="course-box"><div class="course-box-top-box space-mono-thin">Free Course</div>
+            <h5 class="open-sans-regular">Learn Java</h3>
+              <span class="open-sans-regular">Learn to code in Java - a robust programming language used to create software, web and mobile apps, and more.</span>
+                <div class="course-container-footer open-sans-bold">Beginner Friendly</div>
+            </div>
+          </div>
+
+          <div class="course-container">
+            <div class="course-box"><div class="course-box-top-box space-mono-thin">Free Course</div>
+            <h5 class="open-sans-regular">Intro to AI Transformers</h3>
+              <span class="open-sans-regular">Learn about what transformers are and how to work with them using Hugging Face libraries.</span>
+                <div class="course-container-footer open-sans-bold">Beginner Friendly</div>
+            </div>
+          </div>
+
+          <div class="course-container">
+            <div class="course-box"><div class="course-box-top-box space-mono-thin">Free Course</div>
+            <h5 class="open-sans-regular">Learn C#</h3>
+              <span class="open-sans-regular">Learn Microsoft popular C# programming language, used to make websites, mobile apps, video games, VR, and more. </span>
+                <div class="course-container-footer open-sans-bold">Beginner Friendly</div>
+            </div>
+          </div>
+
+        </div>
+          <div href="" class="explore-btn open-sans-regular">Explore Full Catalog</div>
+      </div>
+      
+    </div>
+
+    
 </body>
-<footer>
-    <h5>Mars L. Benitez</h5>
-    <h5>Keiru Vent O. Cabili</h5>
-    <h5>BSCS-2</h5>
-  </footer>
-</html>
+
+<?php
+    require_once 'includes/footer1.php'; 
+?>
